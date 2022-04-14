@@ -8,6 +8,7 @@
     "start": "npm run start-server",
     "start:dev": "npm run start-server & npm run build-watch",
     "start-server": "nodemon --watch server -e js,html server/main.js",
+    "build": "webpack",
     "build-watch": "webpack -w",
     "heroku-prebuild": "npm install --dev"
   },
