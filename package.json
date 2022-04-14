@@ -1,13 +1,15 @@
 {
-  "name": "project-template",
+  "name": "stalactite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start-server & npm run build-watch",
+    "start": "npm run start-server",
+    "start:dev": "npm run start-server & npm run build-watch",
     "start-server": "nodemon --watch server -e js,html server/main.js",
-    "build-watch": "webpack -w"
+    "build-watch": "webpack -w",
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "",
   "license": "ISC",
